@@ -34,6 +34,8 @@ public class CalculadoraAreasSinMetodos {
                         double radioCono = sc.nextDouble();
                         System.out.print("Ingrese la altura del cono: ");
                         double alturaCono = sc.nextDouble();
+                        double areacono= Math.PI * radioCono * (radioCono + Math.sqrt(Math.pow(alturaCono, 2) +
+                                Math.pow(radioCono, 2)));
 
                         break;
 
