@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.*;
 public class CalculadoraAreasSinMetodos {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,11 +19,14 @@ public class CalculadoraAreasSinMetodos {
                         double baseTriangulo = sc.nextDouble();
                         System.out.print("Ingrese la altura del triángulo: ");
                         double alturaTriangulo = sc.nextDouble();
+                        double area = 0.5* baseTriangulo * alturaTriangulo;
+                        System.out.println(area);
 
                         break;
                     case 2:
                         System.out.print("Ingrese el radio del círculo: ");
                         double radioCirculo = sc.nextDouble();
+                        double areacirculo = Math.PI * Math.pow(radioCirculo, 2);
 
                         break;
                     case 3:
